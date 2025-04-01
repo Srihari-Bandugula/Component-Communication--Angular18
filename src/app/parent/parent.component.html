@@ -9,10 +9,11 @@
         <input type="text" placeholder="Phone number from child" [(ngModel)]="child.mobile">
         <p>4. By using ViewChild Decorator</p>
         <input type="text" placeholder="Gender from Child" [(ngModel)]="mOrF">
+        <p>5.{{personData.purpose}} (from service)</p>
     </div>
     <div id="div2">
         <app-child [name]="name" (childMail)="gMail=$event" #child>
-            5.By using ng-content (written in parent Component)
+            5.By using ng-content (from parent Component)
         </app-child>
     </div>
 
